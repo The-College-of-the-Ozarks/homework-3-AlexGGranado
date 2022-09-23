@@ -14,6 +14,7 @@ def menu():
     return choice
 
 #Takes user input
+print("This program outputs the sum, sum of squares, and the sum of cubes of the paramater of your input.")
 x = input('Input a nonnegative integer: ')
 x = float(x)
 
@@ -46,13 +47,10 @@ def GetSumCubes():
         counter = counter + 1
         cube = counter * counter * counter + cube
     return cube
-#Defines functions as variables
-#GetSum = GetSums()
-#GetSumSqr = GetSumSqrs()
-#GetSumCube = GetSumCubes
 
 #Prints output
 while choice != '5':
+    #Define functions as variables
     GetSum = GetSums()
     GetSumSqr = GetSumSqrs()
     GetSumCube = GetSumCubes()
